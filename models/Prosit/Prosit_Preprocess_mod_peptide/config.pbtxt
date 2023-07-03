@@ -10,6 +10,6 @@ output [
  {
    name: 'peptides_in:0',
    data_type: TYPE_INT32,
-   dims: [30]
+   dims: [32]
  }
 ]
