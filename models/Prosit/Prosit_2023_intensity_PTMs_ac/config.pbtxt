@@ -140,7 +140,7 @@ ensemble_scheduling {
 	  
       input_map {
         key: "precursor_charge_in"
-        value: "precursor_charges_in_preprocessed:0"
+        value: "precursor_charges_in"
       }
       output_map {
         key: "out/Reshape:0"
