@@ -7,10 +7,10 @@ input[
    dims: [-1]
   },
   {
-	  name: 'precursor_charges_in:0',
-	  data_type: TYPE_FP32,
-	  dims: [6],
-	},
+	name: 'precursor_charges_in:0',
+	data_type: TYPE_FP32,
+	dims: [6],
+  },
   {
    name: 'peaks_in:0',
    data_type: TYPE_FP32,
