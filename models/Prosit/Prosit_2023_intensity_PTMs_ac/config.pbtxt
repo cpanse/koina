@@ -133,6 +133,11 @@ ensemble_scheduling {
         key: "collision_energy_in"
         value: "norm_collision_energy"
       },
+	  input_map {
+        key: "fragmentation_type_in"
+        value: "fragmentation_types"
+      },
+	  
       input_map {
         key: "precursor_charge_in"
         value: "precursor_charges_in_preprocessed:0"
