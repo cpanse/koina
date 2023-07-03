@@ -143,8 +143,8 @@ ensemble_scheduling {
         value: "precursor_charges_in"
       }
       output_map {
-        key: "out/Reshape:0"
-        value: "out/Reshape:0"
+        key: "out"
+        value: "out"
       }
     },
     {
@@ -160,7 +160,7 @@ ensemble_scheduling {
       }
       input_map{
         key: "peaks_in:0",
-        value: "out/Reshape:0"
+        value: "out"
       }
       output_map {
         key: "intensities"
