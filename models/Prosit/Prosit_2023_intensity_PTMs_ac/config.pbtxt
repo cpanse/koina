@@ -94,7 +94,7 @@ ensemble_scheduling {
       model_name: "Prosit_Preprocess_mod_peptide"
       model_version: 1
       input_map {
-        key: "stripped_peptide"
+        key: "peptide_sequences"
         value: "stripped_peptide"
       },
       output_map {
