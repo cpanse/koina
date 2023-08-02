@@ -13,11 +13,13 @@ def atom_count_str_list(atom_count, atom_count_list):
     atom_count = atom_count[1:-1]
     atom_count = atom_count.split(" ")
     for atoms in atom_count:
-        count = re.findall(r"\d+", atoms)
-        if len(count) > 0:
-            atom_count_list[dict_index_pos[atoms[0]]] += int(count[0])
+        m = re.search(r"([H|C|N|O])\(?(\d*)\)?", atoms)
+        atom = m.group(1)
+        count = m.group(2)
+        if count != '':
+            atom_count_list[dict_index_pos[atom]] += int(count)
         else:
-            atom_count_list[dict_index_pos[atoms[0]]] += 1
+            atom_count_list[dict_index_pos[atom]] += 1
     return atom_count_list
 
 
